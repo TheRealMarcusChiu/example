@@ -4,7 +4,7 @@
 
     <groupId>com.marcus</groupId>
     <artifactId>test-repo</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
 
     <parent>
         <groupId>com.marcuschiu</groupId>
@@ -12,9 +12,29 @@
         <version>7</version>
     </parent>
 
+    <build>
+        <plugins>
+            <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.marcuschiu.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <scm>
         <url>https://github.com/TheRealMarcusChiu/example.git</url>
-        <connection>scm:git:https://github.com/TheRealMarcusChiu/example.git</connection>
-        <developerConnection>scm:git:https://github.com/TheRealMarcusChiu/example.git</developerConnection>
+        <connection>scm:git@github.com:TheRealMarcusChiu/example.git</connection>
+        <developerConnection>scm:git@github.com:TheRealMarcusChiu/example.git</developerConnection>
     </scm>
 </project>
