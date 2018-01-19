@@ -34,7 +34,7 @@
 
     <scm>
         <url>https://github.com/TheRealMarcusChiu/example.git</url>
-        <connection>scm:git@github-personal:TheRealMarcusChiu/example.git</connection>
-        <developerConnection>scm:git@github-personal:TheRealMarcusChiu/example.git</developerConnection>
+        <connection>scm:git@github.com:TheRealMarcusChiu/example.git</connection>
+        <developerConnection>scm:git@github.com:TheRealMarcusChiu/example.git</developerConnection>
     </scm>
 </project>
