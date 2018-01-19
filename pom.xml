@@ -9,7 +9,7 @@
     <version>0.1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.shopatron</groupId>
+        <groupId>com.marcuschiu</groupId>
         <artifactId>shopatron-parent</artifactId>
         <version>7</version>
     </parent>
